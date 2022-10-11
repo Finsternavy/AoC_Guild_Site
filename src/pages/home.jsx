@@ -85,6 +85,7 @@ const Home = () => {
             await service.postResponse(userResponse)
     
             alert("Thanks! Scroll down to see guild results.")
+            return
         }
         alert("Something went wrong. Try again")
     }
