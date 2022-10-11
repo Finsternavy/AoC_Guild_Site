@@ -70,13 +70,11 @@ const Home = () => {
 
     const updateResponse = (choice) => {
         setUserResponse(choice)
-        console.log(choice)
     }
 
     const addResponse = async () => {
         if (userResponse.user_name){
             updateClassData()
-            console.log(userResponse)
             let copy = [...responses]
             copy.push(userResponse)
             setResponses(copy)

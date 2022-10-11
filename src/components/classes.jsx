@@ -26,25 +26,6 @@ const Classes = (props) => {
         setResponse(val)
     }
 
-    // const clicked = (e) => {
-    //     let target = e.target
-    //     console.log(target.data)
-    //     let name = e.target.textContent
-    //     // console.log("Index: " + index)
-    //     // update response object
-    //     let copy = {...response}
-    //     copy[name] = name
-    //     setResponse(copy)
-
-    //     removeSelectedAll()
-    //     let selection = document.getElementById(name)
-    //     console.log(selection)
-    //     selection.classList.toggle('.selected')
-    //     selection.style.color = "rgb(30, 30, 30)"
-    //     selection.style.backgroundColor = "rgb(228, 132, 6)"
-    //     props.data(name)
-    // }
-
     const removeSelectedAll = () => {
         let options = document.querySelectorAll('.subclass-tile')
 
@@ -59,18 +40,11 @@ const Classes = (props) => {
     }
 
     const getTile = (tile, target) => {
-        console.log(tile)
-        console.log(target)
         let name = tile.class
-        console.log("The name is: " + name)
-        // console.log("Index: " + index)
-        // update response object
         setResponse(tile)
 
         removeSelectedAll()
         let selection = document.getElementById(name)
-        console.log(selection)
-        // selection.classList.toggle('.selected')
         selection.style.color = "rgb(30, 30, 30)"
         selection.style.backgroundColor = "rgb(228, 132, 6)"
         props.data(tile)
