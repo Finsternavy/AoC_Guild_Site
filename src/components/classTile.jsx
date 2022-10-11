@@ -16,11 +16,11 @@ const ClassTile = (props) => {
 
         let convertedIndex = tile.index % 8
         console.log("converted index: " + convertedIndex)
-        let primaryClass = classes[convertedIndex]
+        let augmentClass = classes[convertedIndex]
 
         convertedIndex = (copy.index - convertedIndex) / 8
         console.log("Augmented Index: " + convertedIndex)
-        let augmentClass = classes[convertedIndex]
+        let primaryClass = classes[convertedIndex]
 
         
         copy['primary_class'] = primaryClass
