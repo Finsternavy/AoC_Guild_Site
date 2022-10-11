@@ -1,6 +1,5 @@
 import "../components/classes.css"
 import { useState } from "react"
-import { isCompositeComponent } from "react-dom/test-utils"
 import ClassTile from "./classTile"
 
 const Classes = (props) => {

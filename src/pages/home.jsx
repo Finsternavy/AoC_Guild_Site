@@ -96,82 +96,82 @@ const Home = () => {
         let secondary = userResponse.augment_class
         console.log("Augment is: " + secondary)
 
-        if (primary == 'Fighter'){
+        if (primary === 'Fighter'){
             data['DPS_role_primary'] += 1
             data['fighter_primary'] += 1
         }
 
-        if (secondary == 'Fighter'){
+        if (secondary === 'Fighter'){
             data['DPS_role_secondary'] += 1
             data['fighter_secondary'] += 1
         }
 
-        if (primary == 'Tank'){
+        if (primary === 'Tank'){
             data['tank_role_primary'] += 1
             data['tank_primary'] += 1
         }
 
-        if (secondary == 'Tank'){
+        if (secondary === 'Tank'){
             data['tank_role_secondary'] += 1
             data['tank_secondary'] += 1
         }
 
-        if (primary == 'Rogue'){
+        if (primary === 'Rogue'){
             data['DPS_role_primary'] += 1
             data['rogue_primary'] += 1
         }
 
-        if (secondary == 'Rogue'){
+        if (secondary === 'Rogue'){
             data['DPS_role_secondary'] += 1
             data['rogue_secondary'] += 1
         }
 
-        if (primary == 'Ranger'){
+        if (primary === 'Ranger'){
             data['DPS_role_primary'] += 1
             data['ranger_primary'] += 1
         }
 
-        if (secondary == 'Ranger'){
+        if (secondary === 'Ranger'){
             data['DPS_role_secondary'] += 1
             data['ranger_secondary'] += 1
         }
 
-        if (primary == 'Mage'){
+        if (primary === 'Mage'){
             data['DPS_role_primary'] += 1
             data['mage_primary'] += 1
         }
 
-        if (secondary == 'Mage'){
+        if (secondary === 'Mage'){
             data['DPS_role_secondary'] += 1
             data['mage_secondary'] += 1
         }
 
-        if (primary == 'Summoner'){
+        if (primary === 'Summoner'){
             data['DPS_role_primary'] += 1
             data['summoner_primary'] += 1
         }
 
-        if (secondary == 'Summoner'){
+        if (secondary === 'Summoner'){
             data['DPS_role_secondary'] += 1
             data['summoner_secondary'] += 1
         }
 
-        if (primary == 'Cleric'){
+        if (primary === 'Cleric'){
             data['healer_role_primary'] += 1
             data['cleric_primary'] += 1
         }
 
-        if (secondary == 'Cleric'){
+        if (secondary === 'Cleric'){
             data['healer_role_secondary'] += 1
             data['cleric_secondary'] += 1
         }
 
-        if (primary == 'Bard'){
+        if (primary === 'Bard'){
             data['DPS_role_primary'] += 1
             data['bard_primary'] += 1
         }
 
-        if (secondary == 'Bard'){
+        if (secondary === 'Bard'){
             data['DPS_role_secondary'] += 1
             data['bard_secondary'] += 1
         }
