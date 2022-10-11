@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const apiURL = 'http://127.0.0.1:5000'
+// const apiURL = 'http://127.0.0.1:5000'
+const apiURL = "https://aoc-guild-site-backend.onrender.com"
 
 class DataService{
 
