@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "../components/classTile.css"
 
 
 const ClassTile = (props) => {
