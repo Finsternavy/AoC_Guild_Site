@@ -1,0 +1,281 @@
+.home{
+
+}
+
+.home .h1-first{
+    margin-top: 20%;
+    color: var(--off-white);
+    text-shadow: 0 0 10px var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.home .h1{
+    margin-top: 50px;
+    color: var(--off-white);
+    text-shadow: 0 0 10px var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.home .instruction{
+    color: var(--primary-color);
+}
+
+.hero-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: inset 0 0 150px 100px var(--background-color), 0 0 20px 1px var(--primary-color);
+    /* overflow: hidden; */
+}
+
+.home .hero-img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.home .guild-logo{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    z-index: 1000;
+}
+
+.home .aoc-logo-words{
+    position: absolute;
+    top: 5%;
+    width: 70%;
+    z-index: 900;
+}
+
+
+
+/* .responses > :nth-child(even) :nth-child(odd){
+    background-color: var(--off-white);
+    border-color: var(--off-white);
+}
+
+.responses > :nth-child(even) :nth-child(even){
+    color: var(--off-white);
+    border-color: var(--off-white);
+}
+
+.responses > :nth-child(even) :nth-child(even){
+    background-color: var(--background-color);
+} */
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.input-container > * {
+    flex: 1;
+    height: inherit;
+}
+
+.username-label{
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px 0 0 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.username-input{
+    outline: none;
+    border: none;
+    border-radius: 0 30px 0 0;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.username-input::placeholder{
+    color: var(--background-color);
+}
+
+.commit-btn{
+    height: 50px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0 0 30px 30px;
+    font-size: 1.4rem;
+}
+
+.commit-btn:hover{
+    color: var(--off-white);
+    border-color: var(--off-white);
+    cursor: pointer;
+}
+
+.commit-btn:active{
+    box-shadow: none;
+}
+
+.responses{
+    width: 100%;
+    padding-block: 50px;
+}
+
+.response-container{
+    display: flex;
+    /* flex-direction: column; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.columns{
+    flex: 3;
+}
+
+.response-container-headers,
+.response-data{
+    display: flex;
+}
+
+.response-container-headers > *,
+.response-data > * {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.response-container-headers :nth-last-child(1){
+    border-radius: 0 20px 0 0;
+}
+
+
+.response-data :nth-last-child(1){
+    border-radius: 0 0 20px 0;
+}
+
+.response-container .user-name{
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--off-white);
+    text-shadow: 0 0 10px var(--primary-color);
+    /* background-color: var(--rg-color); */
+    border: 1px solid var(--primary-color);
+    border-radius: 20px 0 0 20px;
+    background-image: url(/src/img/Aetherius_logo.png);
+    background-size: 120%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.response-container .response-label{
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: rgb(20, 20, 20);
+}
+
+.response-container .class{
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--off-white);
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.no-margin{
+    margin: 0!important;
+}
+
+.data-point-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.data-point{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-point > * {
+    flex: 1;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+}
+
+.label{
+    background-color: rgb(20, 20, 20);
+    color: var(--primary-color);
+}
+
+.alt-label{
+    background-color: rgb(40, 40, 40);
+    color: rgb(255, 190, 70);
+}
+
+
+.stat{
+    color: rgb(255, 190, 70);
+}
+
+.alt-stat{
+    background-color: rgb(50, 50, 50);
+    color: var(--off-white);
+}
+
+.class-breakdown{
+    padding-bottom: 50px;
+}
+
+.stat-table-header{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.data-point-container-headers{
+    display: flex;
+    width: 100%;
+}
+
+.data-point-container-headers > * {
+    flex: 1;
+    padding: 5px;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border: 1px solid var(--background-color);
+}
